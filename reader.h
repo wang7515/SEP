@@ -10,6 +10,12 @@
 using namespace std;
 
 class reader{
-    reader();
+    private:
+        int parentBlockSize;
+        int blockDivisor;
+    public:
+        reader();
+        void readParentBlock();
+        void returnChunk();
 };
 #endif

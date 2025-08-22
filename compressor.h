@@ -8,5 +8,7 @@ using namespace std;
 
 class compressor{
     compressor();
+    virtual void runCompression();
+    string chooseAlgorithm();
 };
 #endif
