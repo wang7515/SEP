@@ -1,6 +1,13 @@
 #ifndef UTILS_H
 #define UTILS_H
-using namespace std;
-bool parseHeader(const string &s, int &X, int &Y, int &Z, int &pX, int &pY, int &pZ);
 
-#endif // UTILS_HOS
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+class utils{
+    utils();
+    bool parseHeader(const string &s,int &x,int &y,int &z,int &px,int &py,int &pz);
+};
+#endif
