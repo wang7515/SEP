@@ -1,14 +1,17 @@
 #ifndef COMPRESSOR_H
 #define COMPRESSOR_H
 
-#include <iostream>
 #include <string>
-#include <vector>
 using namespace std;
 
 class compressor{
-    compressor();
-    virtual void runCompression();
+public:                           
+    compressor() = default;       
+    virtual ~compressor() = default;
+
+    virtual void runCompression() {}   
+
     string chooseAlgorithm();
 };
+
 #endif

@@ -1,15 +1,10 @@
-#include "block.h"
-#include "compressionContext.h"
-#include "compressor.h"
 #include "compressorController.h"
-#include "reader.h"
-#include "utils.h"
-#include "globalMerge.h"
-
-#include <bits/stdc++.h>
 
 int main(){
-    //main file to run the program
-    cout <<   "Hello World" << endl;
+    compressorController ctrl;
+    ctrl.takeInput();     
+    ctrl.runCompressor(); 
+    ctrl.writeOutput();   
     return 0;
 }
+
